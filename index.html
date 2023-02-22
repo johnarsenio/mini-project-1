@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -119,50 +120,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
   text-decoration: none;
   cursor: pointer;
 }
-/************************/
-/* Slideshow container */
-/*.slideshow-container {
-  position: relative;
-  background: #f1f1f1f1;
-}*/
-
-/* Slides */
-.mySlides {
-  display: none;
-  padding: 80px;
-  text-align: center;
-  
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -105px;
-  padding: 16px;
-  color: #888;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  position: absolute;
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-  color: white;
-}
-
-
 </style>
   </head>
   <style>
@@ -173,14 +130,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
     background-repeat: no-repeat;
     height: 100%;
   }
-
-  .prev
-  {text-decoration:none;
-  }
-  .next 
-  {text-decoration:none;
-  }
-    
 </style>
 
 </div>
@@ -247,9 +196,13 @@ window.onclick = function(event) {
 </script>
 
     <!-- HTML contents here -->
+    <div class="slideshow-container"></div>
     <div class="psalm-buttons">
+      <div class="mySlides"></div>
       <button class="psalm-button" data-psalm="1">Psalm 1</button>
+      <div class="mySlides"></div>
       <button class="psalm-button" data-psalm="2">Psalm 2</button>
+      <div class="mySlides"></div>
       <button class="psalm-button" data-psalm="3">Psalm 3</button>
       <button class="psalm-button" data-psalm="4">Psalm 4</button>
       <button class="psalm-button" data-psalm="5">Psalm 5</button>
@@ -405,9 +358,8 @@ window.onclick = function(event) {
         font-weight: bold;
       }
     </style>
-		<!-- Slideshow container -->
-<div class="slideshow-container">
-    <div class="psalm mySlides" id="psalm-1">
+    <div class="psalm" id="psalm-1">
+      <div class="mySlides"></div>
       <h2>Psalm 1</h2>
 
       <h5>The Righteous and the Wicked Contrasted.</h5>
@@ -427,7 +379,8 @@ window.onclick = function(event) {
         righteous, But the way of the wicked will perish.
       </p>
     </div>
-    <div class="psalm mySlides" id="psalm-2">
+    <div class="psalm" id="psalm-2">
+      <div class="mySlides"></div>
       <h2>Psalm 2</h2>
       <h5>The Reign of the LORD'S Anointed.</h5>
       <p>
@@ -446,7 +399,7 @@ window.onclick = function(event) {
       </p>
     </div>
 
-    <div class="psalm mySlides" id="psalm-3">
+    <div class="psalm" id="psalm-3">
       <h2>Psalm 3</h2>
       <h5>Morning Prayer of Trust in God.</h5>
       <p>
@@ -461,7 +414,7 @@ window.onclick = function(event) {
       </p>
     </div>
 
-    <div class="psalm mySlides" id="psalm-4">
+    <div class="psalm" id="psalm-4">
       <h2>Psalm 4</h2>
       <h5>Evening Prayer of Trust in God.</h5>
       <p>
@@ -475,7 +428,7 @@ window.onclick = function(event) {
         <span class="bold-num">8</span> In peace I will both lie down and sleep, For You alone, O LORD, make me to dwell in safety.
       </p>
     </div>
-    <div class="psalm mySlides" id="psalm-5">
+    <div class="psalm" id="psalm-5">
       <h2>Psalm 5</h2>
       <h5>Prayer for Protection from the Wicked.</h5>
       <p>
@@ -494,23 +447,23 @@ window.onclick = function(event) {
               </p>
     </div>
 
-    <div class="psalm mySlides" id="psalm-6">
+    <div class="psalm" id="psalm-6">
       <h2>Psalm 6</h2>
       <h5>Prayer for Mercy in Time of Trouble.</h5>
-      <p>
-        <span class="bold-num">1</span> O LORD, do not rebuke me in Your anger, Nor chasten me in Your wrath. 
-        <span class="bold-num">2</span> Be gracious to me, O LORD, for I am pining away; Heal me, O LORD, for my bones are dismayed.
-        <span class="bold-num">3</span> And my soul is greatly dismayed; But You, O LORD -how long ? 
-        <span class="bold-num">4</span> Return, O LORD, rescue my soul; Save me because of Your lovingkindness.
-        <span class="bold-num">5</span> For there is no mention of You in death; In Sheol who will give You thanks? 
-        <span class="bold-num">6</span> I am weary with my sighing; Every night I make my bed swim, I dissolve my couch with my tears. 
-        <span class="bold-num">7</span> My eye has wasted away with grief; It has become old because of all my adversaries.
-        <span class="bold-num">8</span> Depart from me, all you who do iniquity, For the LORD has heard the voice of my weeping. 
-        <span class="bold-num">9</span> The LORD has heard my supplication, The LORD receives my prayer.
-        <span class="bold-num">10</span> All my enemies will be overwhelmed with shame and anguish; they will turn back and suddenly be put to shame.
+      <p>        
+<span class="bold-num">1</span> O LORD, do not rebuke me in Your anger, Nor chasten me in Your wrath.
+<span class="bold-num">2</span> Be gracious to me, O LORD, for I am pining away; Heal me, O LORD, for my bones are dismayed.
+<span class="bold-num">3</span> And my soul is greatly dismayed; But You, O LORD -how long *?
+<span class="bold-num">4</span> Return, O LORD, rescue my soul; Save me because of Your lovingkindness.
+<span class="bold-num">5</span> For there is no mention of You in death; In Sheol who will give You thanks?
+<span class="bold-num">6</span> I am weary with my sighing; Every night I make my bed swim, I dissolve my couch with my tears.
+<span class="bold-num">7</span> My eye has wasted away with grief; It has become old because of all my adversaries.
+<span class="bold-num">8</span> Depart from me, all you who do iniquity, For the LORD has heard the voice of my weeping.
+<span class="bold-num">9</span> The LORD has heard my supplication, The LORD receives my prayer.
+<span class="bold-num">10</span> All my enemies will be ashamed and greatly dismayed; They shall turn back, they will suddenly be ashamed.
       </p>
     </div>
-    <div class="psalm mySlides" id="psalm-7">
+    <div class="psalm" id="psalm-7">
       <h2>Psalm 7</h2>
       <h5>The LORD Implored to Defend the Psalmist against the Wicked.</h5>
       <p>
@@ -551,7 +504,7 @@ window.onclick = function(event) {
       </p>
     </div>
 
-    <div class="psalm mySlides" id="psalm-8">
+    <div class="psalm" id="psalm-8">
       <h2>Psalm 8</h2>
       <h5>The LORD'S Glory and Man's Dignity.</h5>
       <p>
@@ -575,7 +528,7 @@ window.onclick = function(event) {
         name in all the earth!
       </p>
     </div>
-    <div class="psalm mySlides" id="psalm-9">
+    <div class="psalm" id="psalm-9">
       <h2>Psalm 9</h2>
 
       <h5>A Psalm of Thanksgiving for God's Justice.</h5>
@@ -621,7 +574,7 @@ window.onclick = function(event) {
         nations know that they are but men. Selah.
       </p>
     </div>
-    <div class="psalm mySlides" id="psalm-10">
+    <div class="psalm" id="psalm-10">
       <h2>Psalm 10</h2>
       <h5>A Prayer for the Overthrow of the Wicked.</h5>
       <p>
@@ -664,7 +617,7 @@ window.onclick = function(event) {
         will no longer cause terror.
       </p>
     </div>
-    <div class="psalm mySlides" id="psalm-11">
+    <div class="psalm" id="psalm-11">
       <h2>Psalm 11</h2>
       <h5>The LORD a Refuge and Defense.</h5>
       <p>
@@ -684,7 +637,7 @@ window.onclick = function(event) {
         righteousness; The upright will behold His face.
       </p>
     </div>
-    <div class="psalm mySlides" id="psalm-12">
+    <div class="psalm" id="psalm-12">
       <h2>Psalm 12</h2>
       <h5>God, a Helper against the Treacherous.</h5>
       <p>
@@ -707,7 +660,7 @@ window.onclick = function(event) {
         When vileness is exalted among the sons of men.
       </p>
     </div>
-    <div class="psalm mySlides" id="psalm-13">
+    <div class="psalm" id="psalm-13">
       <h2>Psalm 13</h2>
       <h5>Prayer for Help in Trouble.</h5>
       <p>
@@ -725,7 +678,7 @@ window.onclick = function(event) {
         dealt bountifully with me.
       </p>
     </div>
-    <div class="psalm mySlides" id="psalm-14">
+    <div class="psalm" id="psalm-14">
       <h2>Psalm 14</h2>
       <h5>Folly and Wickedness of Men.</h5>
       <p>
@@ -747,7 +700,7 @@ window.onclick = function(event) {
       </p>
     </div>
 
-    <div class="psalm mySlides" id="psalm-15">
+    <div class="psalm" id="psalm-15">
       <h2>Psalm 15</h2>
       <h5>Description of a Citizen of Zion.</h5>
       <p>
@@ -763,7 +716,7 @@ window.onclick = function(event) {
         innocent. He who does these things will never be shaken.
       </p>
     </div>
-    <div class="psalm mySlides" id="psalm-16">
+    <div class="psalm" id="psalm-16">
       <h2>Psalm 16</h2>
       <h5>The LORD the Psalmist's Portion in Life and Deliverer in Death.</h5>
       <p>
@@ -791,7 +744,7 @@ window.onclick = function(event) {
         pleasures forever.
       </p>
     </div>
-    <div class="psalm mySlides" id="psalm-17">
+    <div class="psalm" id="psalm-17">
       <h2>Psalm 17</h2>
       <h5>Prayer for Protection against Oppressors.</h5>
       <p>
@@ -829,7 +782,7 @@ window.onclick = function(event) {
         Your likeness when I awake.
       </p>
     </div>
-    <div class="psalm mySlides" id="psalm-18">
+    <div class="psalm" id="psalm-18">
       <h2>Psalm 18</h2>
       <h5>The LORD Praised for Giving Deliverance.</h5>
       <p>
@@ -931,8 +884,7 @@ window.onclick = function(event) {
         forever *.
       </p>
     </div>
-
-    <div class="psalm mySlides" id="psalm-19">
+    <div class="psalm" id="psalm-19">
       <h2>Psalm 19</h2>
       <h5>The Works and the Word of God.</h5>
       <p>
@@ -967,7 +919,7 @@ window.onclick = function(event) {
         my Redeemer.
       </p>
     </div>
-    <div class="psalm mySlides" id="psalm-20">
+    <div class="psalm" id="psalm-20">
       <h2>Psalm 20</h2>
       <h5>Prayer for Victory over Enemies.</h5>
       <p>
@@ -990,7 +942,7 @@ window.onclick = function(event) {
         LORD; May the King answer us in the day we call.
       </p>
     </div>
-    <div class="psalm mySlides" id="psalm-21">
+    <div class="psalm" id="psalm-21">
       <h2>Psalm 21</h2>
       <h5>Praise for Deliverance.</h5>
       <p>
@@ -1022,7 +974,7 @@ window.onclick = function(event) {
         We will sing and praise Your power.
       </p>
     </div>
-    <div class="psalm mySlides" id="psalm-22">
+    <div class="psalm" id="psalm-22">
       <h2>Psalm 22</h2>
       <h5>A Cry of Anguish and a Song of Praise.</h5>
       <p>
@@ -1088,7 +1040,7 @@ window.onclick = function(event) {
         righteousness To a people who will be born, that He has performed it.
       </p>
     </div>
-    <div class="psalm mySlides" id="psalm-23">
+    <div class="psalm" id="psalm-23">
       <h2>Psalm 23</h2>
       <h5>The LORD, the Psalmist's Shepherd.</h5>
       <p>
@@ -1106,142 +1058,101 @@ window.onclick = function(event) {
         I will dwell in the house of the LORD forever.
       </p>
     </div>
-    <div class="psalm mySlides" id="psalm-24"></div>
-    <div class="psalm mySlides" id="psalm-25"></div>
-    <div class="psalm mySlides" id="psalm-26"></div>
-    <div class="psalm mySlides" id="psalm-27">
-      <h2>Psalm 27</h2>
-      <h5>A Psalm of Fearless Trust in God.</h5>
-<span class="bold-num">1</span> The LORD is my light and my salvation; Whom shall I fear? The LORD is the defense of my life; Whom shall I dread?
-<span class="bold-num">2</span> When evildoers came upon me to devour my flesh, My adversaries and my enemies, they stumbled and fell.
-<span class="bold-num">3</span> Though a host encamp against me, My heart will not fear; Though war arise against me, In spite of this I shall be confident.
-<span class="bold-num">4</span> One thing I have asked from the LORD, that I shall seek: That I may dwell in the house of the LORD all the days of my life, To behold the beauty of the LORD And to meditate in His temple.
-<span class="bold-num">5</span> For in the day of trouble He will conceal me in His tabernacle; In the secret place of His tent He will hide me; He will lift me up on a rock.
-<span class="bold-num">6</span> And now my head will be lifted up above my enemies around me, And I will offer in His tent sacrifices with shouts of joy; I will sing, yes, I will sing praises to the LORD.
-<span class="bold-num">7</span> Hear, O LORD, when I cry with my voice, And be gracious to me and answer me.
-<span class="bold-num">8</span> When You said, "Seek My face," my heart said to You, "Your face, O LORD, I shall seek."
-<span class="bold-num">9</span> Do not hide Your face from me, Do not turn Your servant away in anger; You have been my help; Do not abandon me nor forsake me, O God of my salvation!
-<span class="bold-num">10</span> For my father and my mother have forsaken me, But the LORD will take me up.
-<span class="bold-num">11</span> Teach me Your way, O LORD, And lead me in a level path Because of my foes.
-<span class="bold-num">12</span> Do not deliver me over to the desire of my adversaries, For false witnesses have risen against me, And such as breathe out violence.
-<span class="bold-num">13</span> I would have despaired unless I had believed that I would see the goodness of the LORD In the land of the living.
-<span class="bold-num">14</span> Wait for the LORD; Be strong and let your heart take courage; Yes, wait for the LORD.
-    </div>
-    <div class="psalm mySlides" id="psalm-28"></div>
-    <div class="psalm mySlides" id="psalm-29"></div>
-    <div class="psalm mySlides" id="psalm-30"></div>
-    <div class="psalm mySlides" id="psalm-31"></div>
-    <div class="psalm mySlides" id="psalm-32"></div>
-    <div class="psalm mySlides" id="psalm-33"></div>
-    <div class="psalm mySlides" id="psalm-34"></div>
-    <div class="psalm mySlides" id="psalm-35"></div>
-    <div class="psalm mySlides" id="psalm-36"></div>
-    <div class="psalm mySlides" id="psalm-37"></div>
-    <div class="psalm mySlides" id="psalm-38"></div>
-    <div class="psalm mySlides" id="psalm-39"></div>
-    <div class="psalm mySlides" id="psalm-40"></div>
-    <div class="psalm mySlides" id="psalm-41"></div>
-    <div class="psalm mySlides" id="psalm-42"></div>
-    <div class="psalm mySlides" id="psalm-43"></div>
-    <div class="psalm mySlides" id="psalm-44"></div>
-    <div class="psalm mySlides" id="psalm-45"></div>
-    <div class="psalm mySlides" id="psalm-46"></div>
-    <div class="psalm mySlides" id="psalm-47"></div>
-    <div class="psalm mySlides" id="psalm-48"></div>
-    <div class="psalm mySlides" id="psalm-49"></div>
-    <div class="psalm mySlides" id="psalm-50"></div>
-    <div class="psalm mySlides" id="psalm-51">
-      <h2>Psalm 51</h2>
-      <h5>A Contrite Sinner's Prayer for Pardon.</h5>
-<span class="bold-num">1</span> Be gracious to me, O God, according to Your lovingkindness; According to the greatness of Your compassion blot out my transgressions.
-<span class="bold-num">2</span> Wash me thoroughly from my iniquity And cleanse me from my sin.
-<span class="bold-num">3</span> For I know my transgressions, And my sin is ever before me.
-<span class="bold-num">4</span> Against You, You only, I have sinned And done what is evil in Your sight, So that You are justified when You speak And blameless when You judge.
-<span class="bold-num">5</span> Behold, I was brought forth in iniquity, And in sin my mother conceived me.
-<span class="bold-num">6</span> Behold, You desire truth in the innermost being, And in the hidden part You will make me know wisdom.
-<span class="bold-num">7</span> Purify me with hyssop, and I shall be clean; Wash me, and I shall be whiter than snow.
-<span class="bold-num">8</span> Make me to hear joy and gladness, Let the bones which You have broken rejoice.
-<span class="bold-num">9</span> Hide Your face from my sins And blot out all my iniquities.
-<span class="bold-num">10</span> Create in me a clean heart, O God, And renew a steadfast spirit within me.
-<span class="bold-num">11</span> Do not cast me away from Your presence And do not take Your Holy Spirit from me.
-<span class="bold-num">12</span> Restore to me the joy of Your salvation And sustain me with a willing spirit.
-<span class="bold-num">13</span> Then I will teach transgressors Your ways, And sinners will be converted to You.
-<span class="bold-num">14</span> Deliver me from bloodguiltiness, O God, the God of my salvation; Then my tongue will joyfully sing of Your righteousness.
-<span class="bold-num">15</span> O Lord, open my lips, That my mouth may declare Your praise.
-<span class="bold-num">16</span> For You do not delight in sacrifice, otherwise I would give it; You are not pleased with burnt offering.
-<span class="bold-num">17</span> The sacrifices of God are a broken spirit; A broken and a contrite heart, O God, You will not despise.
-<span class="bold-num">18</span> By Your favor do good to Zion; Build the walls of Jerusalem.
-<span class="bold-num">19</span> Then You will delight in righteous sacrifices, In burnt offering and whole burnt offering; Then young bulls will be offered on Your altar.
-    </div>
-    <div class="psalm mySlides" id="psalm-52"></div>
-    <div class="psalm mySlides" id="psalm-53"></div>
-    <div class="psalm mySlides" id="psalm-54"></div>
-    <div class="psalm mySlides" id="psalm-55"></div>
-    <div class="psalm mySlides" id="psalm-56"></div>
-    <div class="psalm mySlides" id="psalm-57"></div>
-    <div class="psalm mySlides" id="psalm-58"></div>
-    <div class="psalm mySlides" id="psalm-59"></div>
-    <div class="psalm mySlides" id="psalm-60"></div>
-    <div class="psalm mySlides" id="psalm-61"></div>
-    <div class="psalm mySlides" id="psalm-62"></div>
-    <div class="psalm mySlides" id="psalm-63"></div>
-    <div class="psalm mySlides" id="psalm-64"></div>
-    <div class="psalm mySlides" id="psalm-65"></div>
-    <div class="psalm mySlides" id="psalm-66"></div>
-    <div class="psalm mySlides" id="psalm-67"></div>
-    <div class="psalm mySlides" id="psalm-68"></div>
-    <div class="psalm mySlides" id="psalm-69"></div>
-    <div class="psalm mySlides" id="psalm-70"></div>
-    <div class="psalm mySlides" id="psalm-71"></div>
-    <div class="psalm mySlides" id="psalm-72"></div>
-    <div class="psalm mySlides" id="psalm-73"></div>
-    <div class="psalm mySlides" id="psalm-74"></div>
-    <div class="psalm mySlides" id="psalm-75"></div>
-    <div class="psalm mySlides" id="psalm-76"></div>
-    <div class="psalm mySlides" id="psalm-77"></div>
-    <div class="psalm mySlides" id="psalm-78"></div>
-    <div class="psalm mySlides" id="psalm-79"></div>
-    <div class="psalm mySlides" id="psalm-83"></div>
-    <div class="psalm mySlides" id="psalm-84"></div>
-    <div class="psalm mySlides" id="psalm-85"></div>
-    <div class="psalm mySlides" id="psalm-86"></div>
-    <div class="psalm mySlides" id="psalm-87"></div>
-    <div class="psalm mySlides" id="psalm-88"></div>
-    <div class="psalm mySlides" id="psalm-89"></div>
-    <div class="psalm mySlides" id="psalm-90"></div>
-    <div class="psalm mySlides" id="psalm-91"></div>
-    <div class="psalm mySlides" id="psalm-92"></div>
-    <div class="psalm mySlides" id="psalm-93"></div>
-    <div class="psalm mySlides" id="psalm-94"></div>
-    <div class="psalm mySlides" id="psalm-95"></div>
-    <div class="psalm mySlides" id="psalm-96"></div>
-    <div class="psalm mySlides" id="psalm-97"></div>
-    <div class="psalm mySlides" id="psalm-98"></div>
-    <div class="psalm mySlides" id="psalm-99"></div>
-    <div class="psalm mySlides" id="psalm-101"></div>
-    <div class="psalm mySlides" id="psalm-102"></div>
-    <div class="psalm mySlides" id="psalm-103"></div>
-    <div class="psalm mySlides" id="psalm-104"></div>
-    <div class="psalm mySlides" id="psalm-105"></div>
-    <div class="psalm mySlides" id="psalm-106"></div>
-    <div class="psalm mySlides" id="psalm-107"></div>
-    <div class="psalm mySlides" id="psalm-108"></div>
-    <div class="psalm mySlides" id="psalm-109"></div>
-    <div class="psalm mySlides" id="psalm-110"></div>
-    <div class="psalm mySlides" id="psalm-111"></div>
-    <div class="psalm mySlides" id="psalm-112"></div>
-    <div class="psalm mySlides" id="psalm-113"></div>
-    <div class="psalm mySlides" id="psalm-114"></div>
-    <div class="psalm mySlides" id="psalm-115"></div>
-    <div class="psalm mySlides" id="psalm-116"></div>
-    <div class="psalm mySlides" id="psalm-117">
-      <h2>Psalm 117</h2>
-      <h5>A Psalm of Praise.</h5>
-<span class="bold-num">1</span> Praise the LORD, all nations; Laud Him, all peoples!
-<span class="bold-num">1</span> For His lovingkindness is great toward us, And the truth of the LORD is everlasting. Praise the LORD!
-    </div>
-    <div class="psalm mySlides" id="psalm-118"></div>
-    <div class="psalm mySlides" id="psalm-119">
+    <div class="psalm" id="psalm-24"></div>
+    <div class="psalm" id="psalm-25"></div>
+    <div class="psalm" id="psalm-26"></div>
+    <div class="psalm" id="psalm-27"></div>
+    <div class="psalm" id="psalm-28"></div>
+    <div class="psalm" id="psalm-29"></div>
+    <div class="psalm" id="psalm-30"></div>
+    <div class="psalm" id="psalm-31"></div>
+    <div class="psalm" id="psalm-32"></div>
+    <div class="psalm" id="psalm-33"></div>
+    <div class="psalm" id="psalm-34"></div>
+    <div class="psalm" id="psalm-35"></div>
+    <div class="psalm" id="psalm-36"></div>
+    <div class="psalm" id="psalm-37"></div>
+    <div class="psalm" id="psalm-38"></div>
+    <div class="psalm" id="psalm-39"></div>
+    <div class="psalm" id="psalm-40"></div>
+    <div class="psalm" id="psalm-41"></div>
+    <div class="psalm" id="psalm-42"></div>
+    <div class="psalm" id="psalm-43"></div>
+    <div class="psalm" id="psalm-44"></div>
+    <div class="psalm" id="psalm-45"></div>
+    <div class="psalm" id="psalm-46"></div>
+    <div class="psalm" id="psalm-47"></div>
+    <div class="psalm" id="psalm-48"></div>
+    <div class="psalm" id="psalm-49"></div>
+    <div class="psalm" id="psalm-50"></div>
+    <div class="psalm" id="psalm-51"></div>
+    <div class="psalm" id="psalm-52"></div>
+    <div class="psalm" id="psalm-53"></div>
+    <div class="psalm" id="psalm-54"></div>
+    <div class="psalm" id="psalm-55"></div>
+    <div class="psalm" id="psalm-56"></div>
+    <div class="psalm" id="psalm-57"></div>
+    <div class="psalm" id="psalm-58"></div>
+    <div class="psalm" id="psalm-59"></div>
+    <div class="psalm" id="psalm-60"></div>
+    <div class="psalm" id="psalm-61"></div>
+    <div class="psalm" id="psalm-62"></div>
+    <div class="psalm" id="psalm-63"></div>
+    <div class="psalm" id="psalm-64"></div>
+    <div class="psalm" id="psalm-65"></div>
+    <div class="psalm" id="psalm-66"></div>
+    <div class="psalm" id="psalm-67"></div>
+    <div class="psalm" id="psalm-68"></div>
+    <div class="psalm" id="psalm-69"></div>
+    <div class="psalm" id="psalm-70"></div>
+    <div class="psalm" id="psalm-71"></div>
+    <div class="psalm" id="psalm-72"></div>
+    <div class="psalm" id="psalm-73"></div>
+    <div class="psalm" id="psalm-74"></div>
+    <div class="psalm" id="psalm-75"></div>
+    <div class="psalm" id="psalm-76"></div>
+    <div class="psalm" id="psalm-77"></div>
+    <div class="psalm" id="psalm-78"></div>
+    <div class="psalm" id="psalm-79"></div>
+    <div class="psalm" id="psalm-80"></div>
+    <div class="psalm" id="psalm-81"></div>
+    <div class="psalm" id="psalm-82"></div>
+    <div class="psalm" id="psalm-83"></div>
+    <div class="psalm" id="psalm-84"></div>
+    <div class="psalm" id="psalm-85"></div>
+    <div class="psalm" id="psalm-86"></div>
+    <div class="psalm" id="psalm-87"></div>
+    <div class="psalm" id="psalm-88"></div>
+    <div class="psalm" id="psalm-89"></div>
+    <div class="psalm" id="psalm-90"></div>
+    <div class="psalm" id="psalm-91"></div>
+    <div class="psalm" id="psalm-92"></div>
+    <div class="psalm" id="psalm-93"></div>
+    <div class="psalm" id="psalm-94"></div>
+    <div class="psalm" id="psalm-95"></div>
+    <div class="psalm" id="psalm-96"></div>
+    <div class="psalm" id="psalm-97"></div>
+    <div class="psalm" id="psalm-98"></div>
+    <div class="psalm" id="psalm-99"></div>
+    <div class="psalm" id="psalm-101"></div>
+    <div class="psalm" id="psalm-102"></div>
+    <div class="psalm" id="psalm-103"></div>
+    <div class="psalm" id="psalm-104"></div>
+    <div class="psalm" id="psalm-105"></div>
+    <div class="psalm" id="psalm-106"></div>
+    <div class="psalm" id="psalm-107"></div>
+    <div class="psalm" id="psalm-108"></div>
+    <div class="psalm" id="psalm-109"></div>
+    <div class="psalm" id="psalm-110"></div>
+    <div class="psalm" id="psalm-111"></div>
+    <div class="psalm" id="psalm-112"></div>
+    <div class="psalm" id="psalm-113"></div>
+    <div class="psalm" id="psalm-114"></div>
+    <div class="psalm" id="psalm-115"></div>
+    <div class="psalm" id="psalm-116"></div>
+    <div class="psalm" id="psalm-117"></div>
+    <div class="psalm" id="psalm-118"></div>
+    <div class="psalm" id="psalm-119">
     <h2>Psalm 119</h2>
     <h5>Meditations and Prayers Relating to the Law of God.</h5>
 <br>Aleph.<br>
@@ -1444,52 +1355,38 @@ window.onclick = function(event) {
 <span class="bold-num">176</span> I have gone astray like a lost sheep; seek Your servant, For I do not forget Your commandments.
 </p>
 </div>
+    <div class="psalm" id="psalm-120"></div>
+    <div class="psalm" id="psalm-121"></div>
+    <div class="psalm" id="psalm-122"></div>
+    <div class="psalm" id="psalm-123"></div>
+    <div class="psalm" id="psalm-124"></div>
+    <div class="psalm" id="psalm-125"></div>
+    <div class="psalm" id="psalm-126"></div>
+    <div class="psalm" id="psalm-127"></div>
+    <div class="psalm" id="psalm-128"></div>
+    <div class="psalm" id="psalm-129"></div>
+    <div class="psalm" id="psalm-130"></div>
+    <div class="psalm" id="psalm-131"></div>
+    <div class="psalm" id="psalm-132"></div>
+    <div class="psalm" id="psalm-133"></div>
+    <div class="psalm" id="psalm-134"></div>
+    <div class="psalm" id="psalm-135"></div>
+    <div class="psalm" id="psalm-136"></div>
+    <div class="psalm" id="psalm-137"></div>
+    <div class="psalm" id="psalm-138"></div>
+    <div class="psalm" id="psalm-139"></div>
+    <div class="psalm" id="psalm-140"></div>
+    <div class="psalm" id="psalm-141"></div>
+    <div class="psalm" id="psalm-142"></div>
+    <div class="psalm" id="psalm-143"></div>
+    <div class="psalm" id="psalm-144"></div>
+    <div class="psalm" id="psalm-145"></div>
+    <div class="psalm" id="psalm-146"></div>
+    <div class="psalm" id="psalm-147"></div>
+    <div class="psalm" id="psalm-148"></div>
+    <div class="psalm" id="psalm-149"></div>
+    <div class="psalm" id="psalm-150"></div>
 
-    <div class="psalm mySlides" id="psalm-120"></div>
-    <div class="psalm mySlides" id="psalm-121"></div>
-    <div class="psalm mySlides" id="psalm-122"></div>
-    <div class="psalm mySlides" id="psalm-123"></div>
-    <div class="psalm mySlides" id="psalm-124"></div>
-    <div class="psalm mySlides" id="psalm-125"></div>
-    <div class="psalm mySlides" id="psalm-126"></div>
-    <div class="psalm mySlides" id="psalm-127"></div>
-    <div class="psalm mySlides" id="psalm-128"></div>
-    <div class="psalm mySlides" id="psalm-129"></div>
-    <div class="psalm mySlides" id="psalm-130"></div>
-    <div class="psalm mySlides" id="psalm-131"></div>
-    <div class="psalm mySlides" id="psalm-132"></div>
-    <div class="psalm mySlides" id="psalm-133"></div>
-    <div class="psalm mySlides" id="psalm-134"></div>
-    <div class="psalm mySlides" id="psalm-135"></div>
-    <div class="psalm mySlides" id="psalm-136"></div>
-    <div class="psalm mySlides" id="psalm-137"></div>
-    <div class="psalm mySlides" id="psalm-138"></div>
-    <div class="psalm mySlides" id="psalm-139"></div>
-    <div class="psalm mySlides" id="psalm-140"></div>
-    <div class="psalm mySlides" id="psalm-141"></div>
-    <div class="psalm mySlides" id="psalm-142"></div>
-    <div class="psalm mySlides" id="psalm-143"></div>
-    <div class="psalm mySlides" id="psalm-144"></div>
-    <div class="psalm mySlides" id="psalm-145"></div>
-    <div class="psalm mySlides" id="psalm-146"></div>
-    <div class="psalm mySlides" id="psalm-147"></div>
-    <div class="psalm mySlides" id="psalm-148"></div>
-    <div class="psalm mySlides" id="psalm-149"></div>
-    <div class="psalm mySlides" id="psalm-150">
-      <h2>Psalm 150</h2>
-    <h5>A Psalm of Praise.</h5>
-    <p>
-<span class="bold-num">1</span> Praise the LORD! Praise God in His sanctuary; Praise Him in His mighty expanse.
-<span class="bold-num">2</span> Praise Him for His mighty deeds; Praise Him according to His excellent greatness.
-<span class="bold-num">3</span> Praise Him with trumpet sound; Praise Him with harp and lyre.
-<span class="bold-num">4</span> Praise Him with timbrel and dancing; Praise Him with stringed instruments and pipe.
-<span class="bold-num">5</span> Praise Him with loud cymbals; Praise Him with resounding cymbals.
-<span class="bold-num">6</span> Let everything that has breath praise the LORD. Praise the LORD!</p>
-</div>
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
-
-</div>
 
     <script>
       // Get all the Psalm buttons
@@ -1566,38 +1463,41 @@ window.onclick = function(event) {
         });
       });
     </script>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
     <footer>
       <p>&copy; 2023 [my mini project] The Book of Psalms</p>
     </footer>
-	
+    <!-- SLIDE ATTEMPT -->
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
   </body>
 </html>
